@@ -1,0 +1,71 @@
+:root {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    color: darkslategray;
+    
+}
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2 {
+    color: darkgreen;
+    font-family: PatrickHand;
+}
+li a{
+    color: mediumseagreen;
+    text-decoration: none;
+}
+nav {
+    background-color: darkgreen;
+    height: 30px;
+    text-align: center;
+}
+nav a{
+    color: mintcream;
+    text-decoration: none;
+    margin: 10px;
+}
+nav a:hover {
+    color: gray;
+}
+footer {
+    background-color: darkgreen;
+    height: 30px;
+}
+img {
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+header {
+    text-align: center;
+}
+li img {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+  }
+  li img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  }
+  @font-face {
+      font-family: PatrickHand;
+      src: url(../Font/PatrickHand-Regular.ttf);
+  }
