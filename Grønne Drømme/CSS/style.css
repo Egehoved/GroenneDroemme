@@ -1,7 +1,8 @@
-:root {
+* {
     margin: 0px;
     padding: 0px;
 }
+/* Nedenstående definerer udseende og dimensioner af siden. */
 body {
     color: darkslategray;
     
@@ -11,14 +12,30 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-h1, h2 {
+/* Ændrer farve samt linjehøjde og skriftstørrelse for overskrifter. */
+h1, h2, h3 {
     color: darkgreen;
-    font-family: PatrickHand;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 4rem;
 }
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h1, h2 {
+    text-shadow: -2px -2px 2px silver;
+}
+/* Fjerner understregning og ændrer farve på links i liste. */
 li a{
     color: mediumseagreen;
     text-decoration: none;
 }
+/* Nedenstående definerer menu funktioner. (links og billed effekter). */
 nav {
     background-color: darkgreen;
     height: 30px;
@@ -27,19 +44,22 @@ nav {
 nav a{
     color: mintcream;
     text-decoration: none;
-    margin: 10px;
+    margin: 1rem;
 }
 nav a:hover {
     color: gray;
 }
+/* Indhold af footer. */
 footer {
     background-color: darkgreen;
     height: 30px;
 }
+/* Afrundede kanter til billeder. */
 img {
     border-bottom-right-radius: 15%;
     border-top-left-radius: 15%;
 }
+/* Lader menu blive på skærmen når du scroller. */
 .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -49,6 +69,7 @@ img {
 header {
     text-align: center;
 }
+/* Transform og filter til interaktive billeder. */
 li img {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
@@ -65,7 +86,14 @@ li img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
   }
-  @font-face {
-      font-family: PatrickHand;
-      src: url(../Font/PatrickHand-Regular.ttf);
+  /* Ændrer skrifttype, tykkelse og linjehøjde på artikler og paragrafer. */
+  article, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
   }
+  /* fjerner understregning fra links og gør tekst til store bogstaver. */
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
