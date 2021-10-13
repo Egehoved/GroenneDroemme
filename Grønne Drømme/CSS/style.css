@@ -1,0 +1,250 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* Nedenstående definerer udseende og dimensioner af siden. */
+body {
+    color: darkslategray;
+    background-image: url(../img/Forside-hoejbed1kwidth.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+main {
+    background-color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+/* Ændrer farve samt linjehøjde og skriftstørrelse for overskrifter. */
+h1, h2, h3 {
+    color: darkgreen;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 4rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h1, h2 {
+    text-shadow: -2px -2px 2px gray;
+}
+/* Fjerner understregning og ændrer farve på links i liste. */
+li a{
+    color: mediumseagreen; 
+    text-decoration: none;
+}
+/* Nedenstående definerer menu funktioner. (links og billed effekter). */
+nav {
+    background-color: darkgreen;
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+nav a{
+    color: white; 
+    text-decoration: none;
+    margin: 1rem;
+}
+.flexmenu {
+    align-self: center;
+    display: flex;
+}
+nav a:hover {
+    color: mediumseagreen; 
+}
+.container {
+    display: flex;
+}
+.father {
+    height: 100vh;
+}
+#father2{
+    height: 100%;
+}
+.flexnoshrink{
+    height: 566px;
+    width: 400px;
+}
+.justgallery {
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+/* Indhold af footer. */
+footer {
+    background-color: darkgreen; 
+    height: 30px;
+    overflow: auto;
+}
+/* Afrundede kanter til billeder. */
+img {
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
+}
+/* Lader menu blive på skærmen når du scroller. */
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+header {
+    text-align: center;
+}
+/* Transform og filter til interaktive billeder. */
+li a img {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+  }
+  .boxshadow li img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    box-shadow: 15px 15px darkslategray;
+  }
+  /* Ændrer skrifttype, tykkelse og linjehøjde på artikler og paragrafer. */
+  article, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
+    color: darkslategray;
+  }
+  /* Gør tekst i normale links til store bogstaver. */
+a {
+    text-transform: uppercase;
+}
+/* Galleri opstilling */
+ul {
+    overflow: hidden;
+}
+li {
+    padding: 15px;
+}
+
+header {
+    background-color: white;
+}
+  /* Udseende af Kontakt os Knappen. */
+.button {
+    background-color: orangered; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  #contact {
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      margin: 0px 10px 25px 10px;
+      z-index: 50;
+  }
+  #contact:hover {
+      opacity: 0.8;
+  }
+  /* Class der fortæller om et billede skal float til venstre eller højre. */
+img.FotoLeft {
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+img.FotoRight {
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+}
+/* Fjerner skygge på bestemt overskrift i blog. */
+main section article div h2{
+    text-shadow: none;
+}
+/* Sidebar class angiver farve højde og bredde. */
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.527);
+    height: 100vh;
+    width: 208px;
+    margin-top: -20px;
+    margin-right: 25px;
+}
+/* Class der sætter farve på tekst. */
+.MGreen {
+    color: mediumseagreen;
+    text-shadow: none;
+}
+/* Diverse classes der angiver om emnet skal float, display inline osv. */
+.left {
+    float: left;
+}
+.inlineblock {
+    display: inline-block;
+}
+.right {
+    float: right;
+}
+.nodots {
+    list-style: none;
+}
+/* Indhold af sidebar. */
+.sidebar li {
+    float: none;
+}
+.sidebar li span {
+    line-height: 40px;
+    height: 40px;
+    display: inline-block;
+    padding-left: 10px;
+}
+.sidebar li img {
+    float: left;
+}
+/* Farve på tekst i footeren. */
+footer p {
+    color: white;
+}
+section>span>h1 {
+    text-align: center;
+} 
+@media only screen and (max-width:500px) {
+    body{
+        background-image: none;
+        background-attachment: none;
+    }
+    header{
+        display:none;
+    }
+    .container{
+        flex-direction: column;
+    }
+    img{
+        max-width: 100%;
+    }
+    .father{
+        height: 100%;
+    }
+    .flexmenu{
+        display: none;
+    }
+    ul{
+        align-items: center;
+    }
+}
